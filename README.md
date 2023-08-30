@@ -3,12 +3,15 @@
 </br></br>
 
 Principios da Orientação a Objetos
+</br>
 coesão
+</br>
       uniao harmonica entre uma coisa e outra
       classes não coesas tendem a crescer indefinidamente, o que as tornam dificeis de manter
       Cada classe deve ser responsável por apenas uma coisa, e deve executar esta tarefa muito bem
       Classes coesas não devem ter várias responsabilidades
 -encapsulamento
+</br>
       incluir ou proteger algo em uma capsula
       classes nao encapsuladas permitem violação de regras de negocio, alem de aumentarem o acoplamento
       forma de manter os objetos das nossas classes protegidos, fornecendo apenas o que é estritamente necessário para o mundo exterior
@@ -22,6 +25,7 @@ coesão
       É interessante fornecer acesso apenas ao que é necessário em nossas classes
       O encapsulamento torna o uso das nossas classes mais fácil e intuitivo
 -acoplamento
+</br>
       ação de acoplar. agrupamento aos pares
       acoplar = 2 componentes que estao interligados entre si, causando dependencia entre eles
       ex.: uma classe que faz a utilização de outra classe
@@ -38,8 +42,13 @@ coesão
       Algumas classes precisarão de outras, para que não tenham muitas responsabilidades. Cabe a nós medir quando faz sentido adicionar tal acoplamento com as dependências        e como depender do que é seguro, ao invés de classes concretas.
 
 
-# SOLID
+</br>
+</br>
+
+</h2>SOLID</h2>
+</br>
 Single responsability principle
+</br>
       principio da responsabilidade unica
       just because you can, doesnt mean you should
       só pq vc pode ter o sistema inteiro em uma unica classe nao significa que deveria ser assim
@@ -50,6 +59,7 @@ Single responsability principle
             codigo duplicado
       uma classe deveria ter apenas um unico motivo para mudar - uncle bob
 Open closed principle
+</br>
       principio do aberto fechado
       voce nao precisa fazer uma cirurgia de peito aberto para colocar um casaco
       em vez de toda nova validacao adicionar na mesma classe, extrair usando interfaces e polimorfismo para tornar a classe mais extensivel, mais flexivel
@@ -62,6 +72,7 @@ Open closed principle
       devemos poder criar novas funcionalidades e estender o sistema sem precisar modificar muitas classes já existentes
       Uma classe que tende a crescer "para sempre" é uma forte candidata a sofrer alguma espécie de refatoração.
 Liskov substitution principle
+</br>
       principio da substituição de liskov
       subtipos devem ser substituíveis por seus tipos base sem afetar a corretude do programa. Isso implica que uma classe derivada (subclasse) deve ser usada em qualquer lugar onde sua classe base (superclasse) é usada, sem causar comportamentos inesperados.
       it looks like a duck, quacks like a duck, but needs battery
@@ -78,6 +89,7 @@ Interface segregation principle
       é mais interessante e mais seguro para o nosso código depender de interfaces (classes abstratas, assinaturas de métodos e interfaces em si) do que das implementações de uma classe;
       Que as interfaces são menos propensas a sofrer mudanças enquanto implementações podem mudar a qualquer momento;
 Dependency inversion principle
+</br>
       principio da inversao de dependencia
       would you solder a lamp directly to the eletrical wiring in a wall?
       abstrações nao devem depender de implementações
@@ -87,6 +99,9 @@ Dependency inversion principle
       Se um método muda a forma como realiza sua tarefa, desde que a interface se mantenha, não vamos precisar nos preocupar nem em editar o nosso código.
       implementações devem depender de abstrações e abstrações não devem depender de implementações;
       Que as interfaces devem definir apenas os métodos que fazem sentido para seu contexto;
+
+</br>
+</br>
 
 tell, dont ask
 fail fast
