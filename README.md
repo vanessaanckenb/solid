@@ -3,8 +3,8 @@
 </br></br>
 
 Principios da Orientação a Objetos
-</br>
-coesão
+</br></br>
+-coesão
 </br>
 uniao harmonica entre uma coisa e outra</br>
 classes não coesas tendem a crescer indefinidamente, o que as tornam dificeis de manter</br>
